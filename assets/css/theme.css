@@ -3110,7 +3110,7 @@ textarea.form-control {
 
 .promo-section{
     color:#fff;
-    height:680px;
+    height:680px!important;
     padding-bottom:0;
     padding-top:170px;
     background:#35373C

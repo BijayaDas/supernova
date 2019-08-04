@@ -67,9 +67,11 @@ $(document).ready(function() {
 
     $('.hero-slider').flexslider({
         animation: "fade",
+        animationLoop: true,
         directionNav: false, //remove the default direction-nav - https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties
         controlNav: false, //remove the default control-nav
         slideshowSpeed: 8000,
+        animationSpeed: 600,
         start: function(){
              $(this).find('.slide').css("display", "block"); //prevent flash of the images
         },
