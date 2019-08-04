@@ -1,11 +1,3 @@
-/*!   
- * Template Name: Supernova - Bootstrap 4 Template for Marketing Mobile Apps
- * Version: 4.0
- * Author: Xiaoying Riley
- * Copyright: 3rd Wave Media Ltd.
- * Website: http://themes.3rdwavemedia.com/
- * Twitter: @3rdwave_themes
-*/
 html,
 body {
     height: 100%
@@ -504,8 +496,8 @@ textarea.form-control {
     position: fixed;
     height: 100%;
     top: 0;
-    right: -240px;
-    overflow-x: hidden;
+    left: -240px;
+    overflow: hidden;
     z-index: 101;
     width: 240px
 }
@@ -513,7 +505,7 @@ textarea.form-control {
 .navmenu .navmenu-close {
     color: #fff;
     position: absolute;
-    left: 15px;
+    right: 15px;
     top: 0px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 30px;
@@ -708,7 +700,8 @@ textarea.form-control {
     margin-top: 15px;
     position: relative;
     z-index: 10;
-    display: inline-block
+    display: inline-block;
+    float: right
 }
 
 .header .logo a {
@@ -752,7 +745,7 @@ textarea.form-control {
 .header .navbar-wrapper {
     position: absolute;
     top: 15px;
-    right: 15px
+    /*right: 15px*/
 }
 
 .header .navbar-wrapper .navbar-label {
@@ -3113,4 +3106,112 @@ textarea.form-control {
         top: 54px;
         left: 39px
     }
+}
+
+.promo-section{
+    color:#fff;
+    height:680px;
+    padding-bottom:0;
+    padding-top:170px;
+    background:#35373C
+}
+.promo-section a{
+    color:#fff
+}
+.promo-section .promo-content{
+    z-index:10;
+    position:relative
+}
+.promo-section .headline{
+    font-size:36px;
+    margin-top:0;
+    margin-bottom:15px
+}
+.promo-section .tagline{
+    font-size:18px;
+    margin-bottom:30px
+}
+.promo-section .actions .btn{
+    margin-right:30px
+}
+.promo-section .actions .play-icon{
+    margin-right:10px
+}
+
+.hero-slider-wrapper{
+    content:"";
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:680px;
+    background:#35373C
+}
+.hero-slider-wrapper .flexslider{
+    margin:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    border:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    border-radius:0;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    background:#35373C
+}
+.hero-slider-wrapper .flexslider .slide{
+    display:none;
+    height:680px
+}
+.hero-slider-wrapper .flexslider .slide.slide-1{
+    background:#35373C url("../images/hero/hero-1.jpg") no-repeat 50% top;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
+}
+.hero-slider-wrapper .flexslider .slide.slide-2{
+    background:#35373C url("../images/hero/hero-2.jpg") no-repeat 50% top;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
+}
+.hero-slider-wrapper .flexslider .slide.slide-3{
+    background:#35373C url("../images/hero/hero-3.jpg") no-repeat 50% top;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
+}
+.hero-slider-wrapper .flexslider .flex-control-nav{
+    display: none;
+}
+.hero-slider-wrapper .flexslider .flex-control-nav li a{
+    display: none;
+}
+.hero-slider-wrapper .flexslider .flex-control-nav li a.flex-active{
+    display: none;
+}
+.hero-slider-mask{
+    background-color:rgba(0,0,0,0.6) 35%;
+    background-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.6) 35%), to(rgba(0,0,0,0)));
+    background-image:-webkit-linear-gradient(left, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0));
+    background-image:-moz-linear-gradient(left, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0));
+    background-image:-ms-linear-gradient(left, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0));
+    background-image:-o-linear-gradient(left, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0));
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:5
+}
+.flex-direction-nav a.flex-disabled {
+   display:none;
 }

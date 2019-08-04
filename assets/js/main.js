@@ -47,13 +47,13 @@ $(document).ready(function() {
 		
 		if($(this).hasClass('navmenu-open')){
           $("#myNavmenu").animate({
-            right: "-=240" //same as the navemenu panel width
+            left: "-=240" //same as the navemenu panel width
            }, 400);
           $(this).removeClass('navmenu-open').addClass('navmenu-hide');
          }
          else {      
          $("#myNavmenu").animate({
-           right: "+=240" //same as the pnavmenu panel width
+           left: "+=240" //same as the pnavmenu panel width
            }, 400);
           $(this).removeClass('navmenu-hide').addClass('navmenu-open');    
          }
@@ -62,6 +62,17 @@ $(document).ready(function() {
     $('#navmenu-close').on('click', function(e) {
         e.preventDefault();
         $('#navbar-toggle').click();
+    });
+
+
+    $('.hero-slider').flexslider({
+        animation: "fade",
+        directionNav: false, //remove the default direction-nav - https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties
+        controlNav: false, //remove the default control-nav
+        slideshowSpeed: 8000,
+        start: function(){
+             $(this).find('.slide').css("display", "block"); //prevent flash of the images
+        },
     });
 
 });
