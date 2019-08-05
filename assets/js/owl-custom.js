@@ -3,7 +3,7 @@ $(document).ready(function() {
     /* ======= Owl Carousel ======= */    
     /* Ref: http://owlgraphic.com/owlcarousel/index.html */
     
-    $("#home-slideshow").owlCarousel({
+    $("#home-slideshow, #home-slideshow1, #home-slideshow2, #home-slideshow3").owlCarousel({
         autoplay:true,       
         autoPlayTimeout : 6000,
         smartSpeed : 400,
@@ -13,25 +13,35 @@ $(document).ready(function() {
         
     });
 
-    $("#home-slideshow1").owlCarousel({
-        autoplay:true,       
-        autoPlayTimeout : 6000,
-        smartSpeed : 400,
-        autoplayHoverPause:true,
-        items: 1,
-        loop: true
+    // $("#home-slideshow1").owlCarousel({
+    //     autoplay:true,       
+    //     autoPlayTimeout : 6000,
+    //     smartSpeed : 400,
+    //     autoplayHoverPause:true,
+    //     items: 1,
+    //     loop: true
         
-    });
+    // });
 
-    $("#home-slideshow2").owlCarousel({
-        autoplay:true,       
-        autoPlayTimeout : 6000,
-        smartSpeed : 400,
-        autoplayHoverPause:true,
-        items: 1,
-        loop: true
+    // $("#home-slideshow2").owlCarousel({
+    //     autoplay:true,       
+    //     autoPlayTimeout : 6000,
+    //     smartSpeed : 400,
+    //     autoplayHoverPause:true,
+    //     items: 1,
+    //     loop: true
         
-    });
+    // });
+
+    // $("#home-slideshow3").owlCarousel({
+    //     autoplay:true,       
+    //     autoPlayTimeout : 6000,
+    //     smartSpeed : 400,
+    //     autoplayHoverPause:true,
+    //     items: 1,
+    //     loop: true
+        
+    // });
 
 
     $("#press-slideshow").owlCarousel({      
