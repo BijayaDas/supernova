@@ -895,11 +895,16 @@ textarea.form-control {
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 300;
-    font-size: 36px
+    font-size: 36px;
+    text-align: center;
 }
 
 .promo .intro-area .intro {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    text-align: left;
+}
+.owl-carousel .owl-item .img-fluid{
+    height:500px!important;
 }
 
 .promo .intro-area .video-container {
